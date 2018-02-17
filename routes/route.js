@@ -20,7 +20,7 @@ router.post('/contact',(req,res,next)=>{
         if(err){
             res.json({msg: 'Failed to add contact.'});
         }else{
-            res.json({msg: 'Contact added to Successfully.'});
+            res.json(contact);
         }
     });
 });
